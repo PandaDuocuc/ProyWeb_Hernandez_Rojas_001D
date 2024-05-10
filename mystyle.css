@@ -131,60 +131,20 @@ input[type = "subdmit"]:hover{
     text-decoration: underline;
 }
 
-footer
-{
-    margin-top: 36px;
+footer{
+    margin-top: 106px;
     width: 100%;
     height: 200px;
 }
 
-.img_royalcanin{
-    margin-top: 52px;
-    margin-left: 200px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    width: 350px;
-    height: 326px;
+.img{
+    max-width: 100%;
+    height: auto;
 }
-.img_correaflexi{
-    margin-top: 52px;
-    margin-left: 200px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    width: 350px;
-    height: 326px;
-}
-.img_desparasitadorperronexgard{
-    margin-top: 52px;
-    margin-left: 200px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    width: 350px;
-    height: 326px;
-}
-.img_correapepolli{
-    margin-top: 52px;
-    margin-left: 200px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    width: 350px;
-    height: 326px;
-}
-.img_comidaperrobelcando{
-    margin-top: 52px;
-    margin-left: 200px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    width: 350px;
-    height: 326px;
-}
-.img_arenagatoamericalitterlavanda{
-    margin-top: 52px;
-    margin-left: 200px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    width: 350px;
-    height: 326px;
+
+.img2{
+    max-width: 100%;
+    height: auto;
 }
 
 a.boton {
@@ -197,173 +157,27 @@ a.boton {
     color: green;
 }
 
-.container {
-    position: relative;
-}
-
-.text-right {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    text-align: right;
-
-}
-
-.details {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    text-align: right;
-}
-
-.product-info {
-    position: absolute;
-    top: 150px;
-    right: 0;
-    text-align: right;
-}
-
-.price {
-    position: absolute;
-    top: 200px;
-    right: 0;
-    text-align: right;
-}
-
-.availability {
-    position: absolute;
-    top: 220px;
-    right: 0;
-    text-align: right;
-}
-
-.about-product {
-    position: absolute;
-    top: 260px;
-    right: 0;
-    text-align: right;
-}
-
-.description {
-    position: absolute;
-    top: 290px;
-    right: 0;
-    text-align: right;
-}
-
-@media only screen and (max-width: 600px) {
-    .text-right,
-    .details,
-    .product-info,
-    .price,
-    .availability,
-    .about-product,
-    .description {
-        position: static;
-        text-align: left;
-        margin-top: 10px;
-    }
-}
-
-/* Estilos para el formulario */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-h1 {
-    text-align: center;
-}
-
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="text"],
-input[type="tel"],
-input[type="number"],
-input[type="email"],
-input[type="password"],
-textarea,
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
     align-items: center;
 }
 
-.bx{
-    font-size: 30px;
-    transform: translateX(2px);
-    cursor: pointer;
-    margin-top: -7px;
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+@media (min-width: 768px) {
+    .img{
+        max-width: 316px;
+    }
 }
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-input[type="submit"]:hover {
-    background-color: #45a049;
+
+@media (min-width: 768px) {
+    .img2{
+        max-width: 478px;
+    }
 }
