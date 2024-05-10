@@ -17,120 +17,6 @@
     object-fit: cover;
 }
 
-.centro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: beige;  
-    border-radius: 10px;
-}
-
-.centro h1{
-    text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid silver;
-}
-
-.centro form{
-    padding: 0 40px;
-    box-sizing: border-box;
-}
-
-form .campo_texto{
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 30px
-}
-
-.campo_texto input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-.campo_texto label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    color: #adadad;
-    transform: translateY(-50%);
-    font-size: 16px;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.campo_texto span::before{
-    content: '';
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background: #2691d9;
-    transition: .5s;
-}
-
-.campo_texto input:focus ~ label,
-.campo_texto input:valid ~ label{
-    top: -5px;
-    color: #2691d9;
-}
-
-.campo_texto input:focus ~ span::before,
-.campo_texto input:valid ~ span::before{
-    width: 100%;
-}
-
-.contra{
-    margin: -5px 0 20px 5px;
-    color: #a6a6a6;
-    cursor: pointer;
-}
-
-.contra:hover{
-    text-decoration: underline;
-}
-
-input[type = "subdmit"]{
-    width: 100%;
-    height: 50px;
-    border: 1px solid;
-    background: #2691d9;
-    border-radius: 25px;
-    font-size: 18px;
-    color: #e9f4fb;
-    font-weight: 700;
-    cursor: pointer;
-    outline: none;
-}
-
-input[type = "subdmit"]:hover{
-    border-color: #2691d9;
-    transition: .5s;
-}
-
-.enlace_registro{
-    margin: 30px 0;
-    text-align: center;
-    font-size: 16px;
-    color: #666666;
-}
-
-.enlace_registro a{
-    color: #2691d9;
-    text-decoration: none;
-}
-
-.enlace_registro a:hover{
-    text-decoration: underline;
-}
-
 footer{
     margin-top: 106px;
     width: 100%;
@@ -180,4 +66,107 @@ a.boton {
     .img2{
         max-width: 478px;
     }
+}
+/* Estilos para el formulario */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    align-items: center;
+}
+
+.bx{
+    font-size: 30px;
+    transform: translateX(2px);
+    cursor: pointer;
+    margin-top: -7px;
+}
+
+/*inicio sesion*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
